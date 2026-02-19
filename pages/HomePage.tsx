@@ -88,7 +88,7 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <AnimatedSection>
               <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
-                <img src="https://picsum.photos/seed/person1/100/100" alt="Headshot of Anjali Mehta" className="w-20 h-20 rounded-full mb-4" loading="lazy" />
+                <img src="https://picsum.photos/seed/person1/100/100" alt="Headshot of Anjali Mehta" className="w-20 h-20 rounded-full mb-4" loading="lazy" decoding="async" width="100" height="100" />
                 <p className="text-gray-600 dark:text-gray-300 italic mb-4">"The mentorship was incredible. I learned more in 3 months at GenIntern than in 2 years of college. My project landed me my first job!"</p>
                 <h4 className="font-bold font-heading text-gray-900 dark:text-white">- Anjali Mehta</h4>
                 <span className="text-sm text-orange-500 dark:text-orange-400">Full-Stack Developer Intern</span>
@@ -96,13 +96,43 @@ const HomePage: React.FC = () => {
             </AnimatedSection>
             <AnimatedSection>
               <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
-                <img src="https://picsum.photos/seed/person2/100/100" alt="Headshot of Rohan Desai" className="w-20 h-20 rounded-full mb-4" loading="lazy" />
+                <img src="https://picsum.photos/seed/person2/100/100" alt="Headshot of Rohan Desai" className="w-20 h-20 rounded-full mb-4" loading="lazy" decoding="async" width="100" height="100" />
                 <p className="text-gray-600 dark:text-gray-300 italic mb-4">"A fantastic experience from start to finish. The project was challenging but rewarding, and the feedback was always constructive."</p>
                 <h4 className="font-bold font-heading text-gray-900 dark:text-white">- Rohan Desai</h4>
                 <span className="text-sm text-orange-500 dark:text-orange-400">Machine Learning Intern</span>
               </div>
             </AnimatedSection>
           </div>
+        </div>
+      </section>
+
+      {/* Resume Building Section */}
+      <section id="resume-building" className="py-20 lg:py-28 relative">
+        <div className="container mx-auto px-6">
+          <AnimatedSection>
+            <div className="max-w-5xl mx-auto bg-white/70 dark:bg-gray-800/70 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8 lg:p-12">
+              <h2 className="text-3xl lg:text-4xl font-bold font-heading mb-4 text-gray-900 dark:text-white text-center">
+                Resume Building That Gets Interviews
+              </h2>
+              <p className="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-300 text-center mb-10">
+                Build an ATS-friendly resume with real project bullets, quantified impact, and recruiter-ready formatting tailored for internships and fresher roles.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="rounded-xl border border-gray-200 dark:border-gray-700 p-6 bg-gray-50 dark:bg-gray-900/50">
+                  <h3 className="text-xl font-bold font-heading text-gray-900 dark:text-white mb-2">1. Resume Audit</h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Get detailed feedback on clarity, formatting, and role alignment to remove common rejection triggers.</p>
+                </div>
+                <div className="rounded-xl border border-gray-200 dark:border-gray-700 p-6 bg-gray-50 dark:bg-gray-900/50">
+                  <h3 className="text-xl font-bold font-heading text-gray-900 dark:text-white mb-2">2. Project Positioning</h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Turn GenIntern projects into strong impact statements with action verbs and measurable outcomes.</p>
+                </div>
+                <div className="rounded-xl border border-gray-200 dark:border-gray-700 p-6 bg-gray-50 dark:bg-gray-900/50">
+                  <h3 className="text-xl font-bold font-heading text-gray-900 dark:text-white mb-2">3. Final Polish</h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Receive a clean, recruiter-friendly final resume with internship-specific variations for faster applications.</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

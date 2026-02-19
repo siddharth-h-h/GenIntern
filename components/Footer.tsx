@@ -22,6 +22,9 @@ const Footer: React.FC = () => {
               <span>GenIntern</span>
             </Link>
             <p className="text-sm text-gray-600 dark:text-gray-400">Bridging the gap between classroom and career.</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+              MSME (Udyam) Registered • UDYAM-UP-29-0213823
+            </p>
             <div className="flex space-x-4 mt-4">
               <a href="https://www.linkedin.com/company/genintern/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-600 dark:text-gray-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors"><FaLinkedin size={24}/></a>
             </div>
